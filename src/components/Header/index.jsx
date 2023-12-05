@@ -9,7 +9,7 @@ export function Header() {
       <form className={styles.newTaskForm} >
         <input placeholder='add a new panda-task' type='text'></input>
         <button>create
-          <AiOutlinePlusCircle />
+          <AiOutlinePlusCircle size={18}/>
         </button>
       </form>
     </header>
