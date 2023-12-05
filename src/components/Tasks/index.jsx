@@ -1,4 +1,6 @@
-import styles from './tasks.module.css'
+import styles from './tasks.module.css';
+import { Task } from '../Task/index.jsx';
+
 export function Tasks() {
   return(
     <section className={styles.tasks} >
@@ -15,7 +17,7 @@ export function Tasks() {
         </div>
       </header>
       <div className={styles.list}>
-
+        <Task />
       </div>
     </section>
   )
