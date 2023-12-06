@@ -3,10 +3,10 @@ import { Tasks } from "./components/Tasks";
 import { useState } from "react";
 
 function App() {
-  const [tasks, setTask] = useState([]);
+  const [tasks, setTasks] = useState([]);
 
   function addTask(taskTitle) {
-    setTask([
+    setTasks([
       ...tasks,
       {
         id: crypto.randomUUID(),
