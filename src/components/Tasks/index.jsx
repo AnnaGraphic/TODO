@@ -2,18 +2,21 @@ import styles from './tasks.module.css';
 import { Task } from '../Task/index.jsx';
 
 export function Tasks({ tasks }) {
+  const tasksQuantity = tasks.length;
+  const tasksCompleted = tasks.filter(task => task.isCompleted).length;
+
   console.log('tasks2', tasks);
   return(
     <section className={styles.tasks} >
       <header className={styles.header}>
         <div>
           <p>create tasks</p>
-          <span>10</span>
+          <span>{tasksQuantity}</span>
         </div>
         <div>
           <p>completed</p>
           <span>
-            0 of 10
+            0 of {tasksQuantity}
           </span>
         </div>
       </header>
