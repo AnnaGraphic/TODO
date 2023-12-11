@@ -1,6 +1,6 @@
 :root {
   --blue: #3D30A2;
-  --lila: #B15EFF;
+  --lila: #ed67ff;
   --yellow: #FFFB73;
 }
 
@@ -11,6 +11,10 @@
   justify-content: center;
   height: 200px;
   position: relative;
+}
+.header img {
+  width: 100%;
+  max-width: 200px;
 }
 
 .newTaskForm {
